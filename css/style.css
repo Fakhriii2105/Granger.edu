@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+li{
+    list-style: none;
+}
+h2{
+    color: #2e6f40;
+}
+p{
+    font-family: 'Inter', sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255,255,255, 0.5), rgba(255,255,255, 0.99)), url('../assets/header.jpeg');
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 250px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul Li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    font-family: 'Inter', sans-serif;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #2e6f40;
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: #2e6f40;
+    font-size: 55px;
+}
+p{
+    color: #2e6f40;
+    padding-top: 10px;
+}
+button{
+    width: 180px;
+    color: #fff;
+    font-size: 15px;
+    padding: 12px 0;
+    background: #2e6f40;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.line{
+    width: 200px;
+    height: 4px;
+    background: #2e6f40;
+    margin: 10px auto;
+}
+
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    margin-bottom: 30px;
+}
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
+}
+.card-list .card-item .card-link:hover {
+    border-color:#2e6f40;
+}
+
+.card-list .card-item .card-image{
+    width: 100%;
+    aspect-ratio: 16 /9;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+
+.card-list .card-link .badge{
+    color: #2e6f40;
+    padding: 8px;
+    font-size: 10px;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    margin-bottom: 2px;
+}
+
+.card-list .card-link .card-title{
+    font-size: 1.19rem;
+    color: #2e6f40;
+    font-weight: 600;
+}
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 20px;
+    overflow: hidden;
+}
+
+.card-wrapper .swiper-pagination-bullet{
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #2e6f40;
+}
+
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button{
+    color: #2e6f40;
+    margin-top: -35px;
+}
+
+.sustain{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255,255,255, 0.89), rgba(255,255,255, 0.91)), url('../assets/bdg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    display: flex;
+    align-items: center;
+}
+.sustain-content{
+    width: 80%;
+    padding: 50px;
+}
+
+.sustain-content h1{
+    text-align: center;
+    font-size: 7vmin;
+    margin: 25px;
+}
+
+.sustain-content p{
+    color: #2e6f40;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.sustain-content .ctn{
+    font-family: 'Inter', sans-serif;   
+}
+
+.ctn{
+    padding: 8px 15px;
+    background: #2e6f40;
+    border-radius: 30px;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+.agenda-section {
+    margin: 30px 0;
+    padding-left: 50px;
+}
+
+.agenda-title {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.agenda-title::after {
+    content: '';
+    display: block;
+    width: 250px;
+    height: 3px;
+    background-color: #2e6f40;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.agenda-container {
+    display: flex;
+    gap: 35px;
+}
+
+.agenda-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 100px;
+}
+
+.agenda-item:hover {
+    transform: translateY(-5px);
+}
+
+.date-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #2e6f40;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.date-box .day {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+}
+
+.date-box .month {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+.event-details {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+.event-details h4 {
+    font-size: 16px;
+    margin: 0 0 5px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+.event-details p {
+    margin: 0;
+    color: #2e6f40;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: #2e6f40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 1px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo img {
+    width: 300px;
+    margin: 10px 0;
+    margin-top: 25px;
+}
+
+.footer-logo p {
+    font-size: 12px;
+}
+
+.quotes{
+    margin-bottom: 190px;
+}
+
